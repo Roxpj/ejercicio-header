@@ -1,0 +1,28 @@
+.noticia {
+    max-width: 80vw;
+    margin: auto;
+    line-height: 1.5;
+}
+
+
+.noticia__img--left {
+    max-width: 40vw;
+    float: left;
+    margin-right: 1em;
+}
+
+@media screen and (min-width: 1000px) {
+    .noticia {
+        max-width: 60vw;
+    }
+
+    .noticia h1 {
+        font-size: 3em;
+    }
+
+    .noticia p {
+        line-height: 2;
+        font-size: 1.5em;
+    }
+
+}

@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(200, 255, 237);
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR con SUBMENÚS */
+nav {
+    background: linear-gradient(45deg, rgb(201, 114, 197), rgb(135, 217, 224));
+    display: fixed;
+    top: 0;
+    padding: 5px;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    gap: 10px;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    padding: 10px;
+    margin: auto;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav ul li:hover {
+    background: linear-gradient(45deg, rgb(201, 114, 197), rgb(135, 217, 224));
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+.submenu a {
+    text-decoration: none;
+}
+
+
+/* PANELES DESPLEGABLES */
+#paneles-conten {
+    width: 50vw;
+    height: 100%;
+    margin: 10px auto;
+    border: 2px solid rgb(231, 177, 254);
+    padding: 20px;
+    background-color: white;
+}
+
+/* escondemos los input radio */
+.panel-input {
+    display: none;
+}
+
+
+/* estilos del label del panel / cabecera del panel*/
+.panel label {
+    display: block;
+    border: 1px solid rgb(231, 177, 254);
+    height: 1.8em;
+    padding: 5px 0 0 15px;
+    font-weight: 600;
+    width: calc(100% - 15px);
+}
+
+/* padding lateral para los textos */
+.panel p {
+    padding: 0 15px;
+}
+
+/* margen inferior para cada panel */
+.panel {
+    margin-bottom: 10px;
+}
+
+
+/* estilos del contenido PLEGADO */
+.contenido {
+    width: 100%;
+    border: 1px solid transparent; /* sin color para que no se vea*/
+    height: 0; /* elimino la altura para colapsarlo*/
+    overflow: hidden; /* escondo los elementos que sobresalen de la caja*/
+}
+
+/* estilos del contenido DESPLEGADO */
+.panel-input:checked~.contenido {
+    height: auto; /*cambio el alto para sobreescribir la orden de height:0*/
+    border-color: rgb(231, 177, 254); /* defino color de borde para que se visualize*/
+    border-top: none;
+    margin-bottom: 4px;
+}
+
+
+/* CONTENIDO en PESTAÑAS */
