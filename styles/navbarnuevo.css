@@ -41,7 +41,9 @@ nav ul li:hover {
 
 nav ul li:hover ul {
     display: block;
+    margin-top: 1em;
 }
+
 
 .submenu a {
     text-decoration: none;
@@ -100,6 +102,3 @@ nav ul li:hover ul {
     border-top: none;
     margin-bottom: 4px;
 }
-
-
-/* CONTENIDO en PESTAÑAS */
