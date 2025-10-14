@@ -5,38 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/header2.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/style.css">
 
     <title>Document</title>
 </head>
 
 <body>
+
     <nav>
-        <div id="logo">
-            <input type="checkbox" name="menu" id="menu">
-            <label for="menu"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg> </label>
-        </div>
-        <div>
-            <a class="menu-desplegable" href="index.html"> <img src="../imagenes/gato-favicon.jpg" alt="logo de inicio">
-            </a>
-            <ul class="menu-desplegable">
-                <li><a href="">Nosotros</a></li>
-                <li><a href="pages/header2.html">Servicios</a></li>
-                <li><a href="pages/galeria-cuadr.html">Galería</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-            </ul>
-        </div>
+        <input type="checkbox" name="menu" id="menu">
+        <label for="menu"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg> </label>
+
+
+        <a class="menu-desplegable" href="../index.html"> <img src="../imagenes/gato-favicon.jpg" alt="logo de inicio">
+        </a>
+        <ul class="menu-desplegable">
+            <li><a href="">Nosotros</a></li>
+            <li><a href="header2.html">Servicios</a></li>
+            <li><a href="galeria-cuadr.html">Galería</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="navbarnuevo.html">Desplegables</a></li>
+        </ul>
     </nav>
-    <header>
 
 
-    </header>
+    <article>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi maxime error ad. Laborum officiis porro
+            suscipit. Fugit neque porro ea numquam in voluptatum voluptatem eligendi corporis at. Expedita aperiam ab
+            perferendis tempore voluptatibus nulla sit ipsam enim neque! Qui dolor commodi veritatis dolore ipsum ad
+            asperiores nihil laudantium impedit dignissimos?</p>
+
+        <strong>Tareas por hacer:</strong>
+        <ul>
+            <li>Poner margen al body.</li>
+        </ul>
+    </article>
+    <hr>
+    <!-- --------------- -->
+
+    <input type="checkbox" name="opcion1" id="opcion1">
+    <label for="opcion1">Opción 1</label>
+
+    <input type="checkbox" name="opcion2" id="opcion2">
+    <label for="opcion2">Opción 2</label>
+
+    <br><br>
+
+    <label for="color-texto">Elige el color de la fuente:</label>
+    <input type="color" name="color-texto" id="color-texto">
+
+    <br><br>
+    <label for="tarea-nueva">Añade tareas a la lista:</label>
+    <input type="text" name="tarea-nueva" id="tarea-nueva">
+    <!-- <input type="button" value="Añadir" onclick=""> -->
+    <button onclick="">Añadir</button>
 
 
 
+
+    <!-- conexion a JAVASCRIPT -->
+    <script src="../js/intro.js"></script>
 </body>
 
 </html>
