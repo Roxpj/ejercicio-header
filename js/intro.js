@@ -45,6 +45,26 @@ let persona1 = {
 }
 
 
+// string.lenght // nos dice el num de elementos en un array, o numero char en un string
+// charAt() // selecciona un caracter en una posicion del string
+// indexOf  //devuelve la primera posición donde encuentre un elemento o caracter especificado, en arrays o strings
+// parseInt() //convierte a número entero
+// parseFloat() //convierte a número con decimales
+
+
+
+//createElement("")     //crear elem html
+//appendChild()      //añadir hijos a un elemento
+//.classList    .add  .remove .toggle
+//removeAttribute()  .setAttribute()
+//innerHTML = ``
+//textContent = ``
+
+
+// document.querySelector("h1").classList.add("titulo-seccion")
+// document.querySelector("h1").style.color
+
+
 
 //FUNCIONES
 
@@ -88,21 +108,50 @@ let elemtosLista = document.querySelectorAll("ul li");
 
 
 // BUCLES
+// Nos permiten repetir el código un número de veces determinado, hasta que se cumple la condición.
 
 //for ( inicio ;  condición ;  modificador ) { instrucciones}
 for (let index = 0; index < elemtosLista.length; index++) {
     const element = elemtosLista[index];
 }
 
-// forEach
+
+// forEach - Método para recorrer arrays
 array.forEach(element => {
 
 });
 
 
 // EVENTOS
-// element.addEventListener("", )
-// click, mousedown, mouseup, keypress 
+// target.addEventListener( "tipo de evento", función a lanzar )
+// Escuchador que indica al navegador que este atento a la interacción del usuario.
+
+    // blur - Cuando el elemento pierde el foco.
+    // click - El usuario hace clic sobre el elemento.
+    // dblclick - El usuario hace doble clic sobre el elemento.
+    // focus - El elemento gana el foco.
+    // keydown - El usuario presiona una tecla.
+    // keypress - El usuario presiona una tecla y la mantiene pulsada.
+    // keyup - El usuario libera la tecla.
+    // load - El documento termina su carga.
+    // mousedown - El usuario presiona el botón del ratón en un elemento.
+    // mousemove - El usuario mueve el puntero del ratón sobre un elemento.
+    // mouseout - El usuario mueve el puntero fuera de un elemento.
+    // mouseover - El usuario mantiene el puntero sobre un elemento.
+    // mouseup - El usuario libera el botón pulsado del ratón sobre un elemento.
+    // unload - El documento se descarga, bien porque se cierra la ventana, bien porque se navega a otra página.
+    // Más en: https://www.w3schools.com/jsref/dom_obj_event.asp
+
+// Puede aplicarse más de una función a un mismo evento:
+
+// document.getElementById("myBtn").addEventListener("click", myFunction);
+// document.getElementById("myBtn").addEventListener("click", someOtherFunction);
+
+// Puede aplicarse diferentes tipos de evento a un mismo elemento:
+
+// document.getElementById("myBtn").addEventListener("mouseover", myFunction);
+// document.getElementById("myBtn").addEventListener("click", someOtherFunction);
+// document.getElementById("myBtn").addEventListener("mouseout", someOtherFunction);
 
 
 
@@ -157,32 +206,6 @@ function cambiarColorTareas() {
         }
     });
 }
-
-
-
-// string.lenght //elementos array, numero char string
-// charAt() // selecciona caracter en una posicion del string
-// indexOf  
-// parseInt()
-// parseFloat()
-
-
-// document.getElementById('color-texto').addEventListener('input', function (event) {
-//     let colorSeleccionado = event.target.value;
-//     document.querySelector('article').style.color = colorSeleccionado;
-// });
-
-
-// document.querySelector("h1").classList.add("titulo-seccion")
-// document.querySelector("h1").style.color
-
-
-//createElement("") //crear elem html
-//appendChild() //añadir hijos a un elemento
-//.classList    .add  .remove .toggle
-//removeAttribute() .setAttribute()
-//innerHTML = `
-//textContent
 
 
 
