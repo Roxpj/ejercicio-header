@@ -1,0 +1,86 @@
+/* Variables MODO CLARO (por defecto) */
+:root {
+    --color-fondo: #ffffff;
+    /* --color-borde: #dcdcdc; */
+    --color-texto: #222;
+    --color-secundario: #555;
+    --color-principal: #007b5e;
+    --color-sombra: rgba(0, 0, 0, 0.1);
+    --color-sombra-resaltado: #007b5e78;
+}
+
+/* Variables MODO OSCURO */
+.modo-oscuro {
+    --color-fondo: #1a1a1a;
+    /* --color-borde: #333; */
+    --color-texto: #f5f5f5;
+    --color-secundario: #aaa;
+    --color-principal: #4dd0e1;
+    --color-sombra: none;
+    --color-sombra-resaltado: #007b5e78;
+
+}
+
+/* Diseño general */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: "Segoe UI", sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#lista-libros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.libro {
+    background-color: var(--color-fondo);
+    border: 2px solid var(--color-sombra-resaltado);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px var(--color-sombra);
+    padding: 15px;
+    width: 250px;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s;
+}
+
+.libro .titulo {
+    color: var(--color-texto);
+}
+
+.libro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px var(--color-sombra-resaltado);
+}
+
+.libro .autor,
+.libro .genero {
+    color: var(--color-secundario);
+}
+
+.libro .precio {
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+/* Botón cambio de tema */
+#btn-tema {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#btn-tema:hover {
+    background-color: #005f4e;
+}
