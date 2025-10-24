@@ -6,16 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Práctica de JSON</title>
     <!-- <link rel="stylesheet" href="../styles/style.css"> -->
-    <link rel="stylesheet" href="../styles/practicajsn.css">
+     <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/modo-claro-oscuro.css">
+    <link rel="stylesheet" href="../styles/fondo-slider.css">
 </head>
 
 <body>
+ <nav>
+        <input type="checkbox" name="menu" id="menu">
+        <label for="menu"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg> </label>
+
+
+        <a class="menu-desplegable" href="../index.html"> <img src="../imagenes/gato-favicon.jpg" alt="logo de inicio">
+        </a>
+        <ul class="menu-desplegable">
+            <li><a href="../pages/galeria-cuadr.html">Galería</a></li>
+            <li><a href="../pages/float.html">Float</a></li>
+            <li><a href="../pages/navbarnuevo.html">Desplegables</a></li>
+            <li><a href="../pages/header2.html">IntroJS</a></li>
+            <li><a href="../pages/keyframes.html">Animaciones</a></li>
+            <li><a href="../pages/practicajsn.html">Libros JSON</a></li>
+        </ul>
+    </nav>
+
 
     <button id="btn-tema">🌙</button>
 
     <h2>Listado de libros</h2>
     <div id="lista-libros"></div>
+
+    <div class="container">
+        <div class="sliding-background"></div>
+    </div>
 
     <script src="../js/practicajsn.js"></script>
     <script src="../js/modo-claro-oscuro.js"></script>

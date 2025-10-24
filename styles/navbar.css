@@ -25,7 +25,7 @@ nav svg {
 
 /* cuando el checkbox está marcado, hago el logo y la lista visibles */
 input:checked~.menu-desplegable {
-    display: block; 
+    display: block;
     text-align: center;
 }
 
@@ -78,6 +78,11 @@ ul.menu-desplegable a:hover {
         gap: 50px;
     }
 
+    ul.menu-desplegable a {
+
+        font-size: 1em;
+    }
+
     a.menu-desplegable {
         display: block;
     }
@@ -95,6 +100,8 @@ ul.menu-desplegable a:hover {
         justify-content: space-between;
         align-items: center;
     }
+
+
 
 
 }

@@ -3,7 +3,7 @@ div:has(h2 + p) {
 }
 
 
-h2 + p {
+h2+p {
   text-transform: uppercase;
 }
 
@@ -73,10 +73,39 @@ button {
     transform: translate3d(20px, 0, 0);
   }
 }
-#shake{
+
+#shake {
   animation: shake ease-in 300ms infinite alternate;
 }
 
+
+/* @keyframes */
+/* animation:  */
+
+/* @keyframes cambiocolor {
+  0% {
+    top: 0;
+    background-color: black;
+  }
+
+  10% {
+    background-color: aqua;
+  }
+
+  20% {
+    background-color: blue;
+  }
+
+  100% {
+    top: 300px;
+    background-color: blueviolet;
+  }
+}
+
+#boton-color{
+  background-color: aliceblue;
+  animation: cambiocolor ease-in 3s infinite;
+} */
 
 
 @keyframes flip {
@@ -85,7 +114,7 @@ button {
   }
 }
 
-#flip{
+#flip {
   animation: flip ease-in 600ms infinite alternate;
 }
 
@@ -95,6 +124,7 @@ button {
     transform: scale(1.5);
   }
 }
+
 #pulse {
   animation: pulse ease-in 1400ms infinite alternate;
 }
@@ -105,6 +135,7 @@ button {
     transform: skew(180deg);
   }
 }
+
 #glitch {
   animation: glitch ease-in 600ms infinite;
 }
@@ -114,9 +145,10 @@ button {
     transform: rotateZ(60deg) translate(1em, -9em);
   }
 }
+
 #sheen::after {
   animation: sheen ease-in 1s infinite;
- content: "";
+  content: "";
   position: absolute;
   top: -50%;
   right: -50%;
@@ -132,19 +164,21 @@ button {
     box-shadow: 0 0 40px hsl(90, 100%, 60%);
   }
 }
-#glow{
+
+#glow {
   animation: glow ease-in 600ms infinite alternate;
 }
 
-@keyframes tonyhawk {
+@keyframes twirl {
+
   50%,
   100% {
     transform: rotate(900deg);
   }
 }
 
-#tonyhawk{
-  animation: tonyhawk ease-in 600ms infinite;
+#twirl {
+  animation: twirl ease-in 600ms infinite;
 }
 
 
@@ -155,6 +189,7 @@ button {
     transform: skew(45deg);
   }
 }
-#blur{
+
+#blur {
   animation: blur ease-in 1s infinite alternate;
 }
