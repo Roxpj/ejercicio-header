@@ -61,7 +61,7 @@ strong {
 main {
     max-width: 80%;
     /* min-width: ; */
-    margin: 0 auto;
+    margin: 4em auto;
 }
 
 a {

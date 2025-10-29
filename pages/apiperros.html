@@ -27,25 +27,26 @@
             <li><a href="../pages/header2.html">IntroJS</a></li>
             <li><a href="../pages/keyframes.html">Animaciones</a></li>
             <li><a href="../pages/practicajsn.html">Libros JSON</a></li>
+            <li><a href="../pages/apiperros.html">API Perros</a></li>
         </ul>
     </nav>
 
-<!--     
-    <form id="form-raza">
-        <label for="raza">Selecciona una raza:</label>
-        <select id="raza" name="raza" required> -->
-            <!-- Las razas se cargan desde la API-->
-        <!-- </select>
-        <button type="submit">Ver perro</button>
-    </form> -->
+    <main>
+
+        <form id="form-raza">
+            <label for="raza">Selecciona una raza:</label>
+            <select id="raza" name="raza" required>
+                <!-- Las razas se cargan desde la API-->
+            </select>
+            <button type="submit">Ver perro</button>
+        </form>
 
 
 
+        <button id="btn-random">Ver perro aleatorio</button>
+        <div id="resultado"></div>
 
-    <button id="btn-random">Ver perro aleatorio</button>
-    <div id="resultado"></div>
-
-
+    </main>
 
     <script src="../js/apiperros.js"></script>
 </body>

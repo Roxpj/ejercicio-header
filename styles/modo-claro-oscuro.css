@@ -31,6 +31,14 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+main{
+    max-width: none;
+}
+h2{
+    text-align: center;
+    
+}
+
 #lista-libros {
     display: flex;
     flex-wrap: wrap;
@@ -72,7 +80,7 @@ body {
 /* Botón cambio de tema */
 #btn-tema {
     position: fixed;
-    top: 70px;
+    top: 8em;
     right: 15px;
     background-color: var(--color-principal);
     color: white;
